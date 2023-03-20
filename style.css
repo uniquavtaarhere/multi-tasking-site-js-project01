@@ -6,6 +6,7 @@
 }
 body{
     background-color: #202020;
+    
 }
 
 .navbar{
@@ -13,6 +14,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding:15px;
+   
 }
 .navbar .menu >h1{
    color:#DADADA;
@@ -325,6 +327,15 @@ body{
 
 
 @media (max-width:700px){
+    .navbar{
+        margin:0px;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: flex-start;
+        width:100%;
+
+    }
     .navbar .menu{
         text-align: start;
         margin-left:0px;
@@ -334,29 +345,22 @@ body{
     }
     .navbar .menu >h1{
         font-size: 24px;
-        width:80%;
-    }
-     .list-items{
-        opacity:0;
-    }
-    .navbar{
-        flex-direction: column;
-        justify-content: flex-start;
         width:100%;
-
     }
-    .active{
-        transition:0.5s linear;
-        background-color:#202020;
-        width:100%;
-        text-align: center;
-        opacity:0.8;
-        display:flex;
-        flex-direction: column;
-   } 
-       .navbar .bars-parent{
+   .navbar .list-items {
+    gap:10px;
+   }
+    
+    .list-items .child-lists{
+        flex:1;
+    }
+    
+    .navbar .bars-parent{
         opacity:1;
+        
     }
+    
+     
     .new{
         transform:rotate(90deg);
         transition:0.5s;
@@ -385,7 +389,23 @@ body{
         
         object-fit: fill;
        }
-    }
+        .list-items{
+       
+        flex-wrap: wrap;
+        opacity: 0;
+           }
+       .active{
+        transition:0.5s linear;
+        background-color:#202020;
+        width:100%;
+        text-align: center;
+        opacity:1;
+        gap:10px;
+        flex-direction: column;
+    
+   } 
+  
+    } 
     
 
     
