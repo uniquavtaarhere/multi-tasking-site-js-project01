@@ -14,8 +14,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding:15px;
+    position: sticky;
+    top:0px;
+    
    
 }
+
 .navbar .menu >h1{
    color:#DADADA;
    font-size: 48px;
@@ -311,6 +315,82 @@ body{
     
     
 }
+.form{
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px;
+background-color: #443e3e;
+
+padding:30px;
+}
+.form h5 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color:#f1e7e7;
+}
+.form .form-name{
+   
+   padding:10px;
+   background-color: #474747;
+   
+  
+
+   
+  
+  
+}
+.form .form-name>input[type="text"]{
+    border-radius: 5px;
+    width:200px;
+    height:30px;
+    background-color: #777777;
+    border:2.5px solid rgb(46, 45, 45);
+}
+.form .form-email{
+    padding: 10px;
+    background-color: #474747;
+    
+}
+.form .form-email>input[type="email"]{
+    border-radius: 5px;
+    width:200px;
+    height: 30px;
+    background-color: #777777;
+    border:2.5px solid rgb(46, 45, 45);
+}
+.form .feedback {
+    background-color: #474747;
+    padding-left: 10px;
+    
+}
+.form .feedback .textarea{
+    border-radius: 5px;
+    width:200px;
+    height:150px;
+    background-color: #777777;
+    margin-bottom: 10px;
+   
+    
+    border:2.5px solid rgb(46, 45, 45);
+}
+.form .feedback .button{
+    padding:10px;
+    background-color: #474747;
+    border:5px solid #777777;
+    color:#d7d7dd;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.label{
+    font-size: 16px;
+    font-weight: 200;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    color:#f1e7e7;
+}
 .footer2 {
     background-color: #d7d7dd;
     text-align: center;
@@ -404,6 +484,15 @@ body{
         flex-direction: column;
     
    } 
+   .form {
+    text-align: start;
+   }
+   .form .feedback {
+    padding-left:10px;
+   }
+   .form .feedback .button{
+    margin-left:115px;
+   }
   
     } 
     
