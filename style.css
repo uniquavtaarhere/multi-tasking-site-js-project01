@@ -4,8 +4,17 @@
     padding:0;
 
 }
+:root{
+    --background-color: #202020;
+    --heading-color: #dadada;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::selection{
+    background-color: #1f1f20;
+    color:#d7d7dd;
+}
 body{
-    background-color: #202020;
+    background-color: var(--background-color);
     
 }
 
@@ -21,7 +30,7 @@ body{
 }
 
 .navbar .menu >h1{
-   color:#DADADA;
+   color:var(--heading-color);
    font-size: 48px;
    font-family: 'Londrina Shadow', cursive;
    
@@ -31,14 +40,14 @@ body{
     display:flex;
     list-style-type: none;
     gap:30px;
-    color:#DADADA;
+    color:var(--heading-color);
 }
 .navbar .list-items .child-lists{
     border-radius: 5px;
    font-size: 18px;
    padding:20px;
    background-image: linear-gradient(#5361e2,#03051a);
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: var(--font-family);
 }
 .navbar .list-items .child-lists:hover{
     font-size: 24px;
@@ -65,7 +74,7 @@ body{
 }
 .header{
     /*background-color: #202020;*/
-    color:#DADADA;
+    color:var(--heading-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +87,7 @@ body{
  
 }
 .header .header-child1 > h3{
-    color:#DADADA;
+    color:var(--heading-color);
     font-size:50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -91,9 +100,9 @@ body{
 }
 
 .header .header-child1 >p{
-    color:#DADADA;
+    color:var(--heading-color);
     font-size: 24px;
-    font-family: 'Lobster', cursive;
+    font-family: var(--font-family);
    
     /*margin-left:20px;*/
 
@@ -103,7 +112,7 @@ body{
     padding:20px;
     margin-top:20px;
     margin-bottom: 20px;
-    color:#DADADA;
+    color:var(--heading-color);
     font-size: 18px;
     border-radius: 10px;
     background-image:linear-gradient(#5361e2,#03051a);
@@ -140,7 +149,7 @@ body{
 }
 
 .section1 .temp-convert>h4{
-    color:#f7f1f1;
+    color:var(--heading-color);
     font-size: 24px;
     margin-left:10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -164,7 +173,7 @@ body{
    
 }
 .section1 .bg-change>h4{
-    color:#f5eded;
+    color:var(--heading-color);
     font-size: 24px;
     margin-left:10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -189,7 +198,7 @@ body{
    
 }
 .section1 .quote-change >h4{
-    color:#f7f1f1;
+    color:var(--heading-color);
     font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -221,7 +230,7 @@ body{
    
 }
 .section1 .theme >h4{
-    color:#f7f1f1;
+    color:var(--heading-color);
     font-size: 24px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -256,7 +265,7 @@ body{
     
 }
 .section2 .sc-changer>h4{
-   color:#0a0909;
+   color:var(--heading-color);
    font-size: 24px;
    margin-top: 20px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -278,14 +287,14 @@ body{
     font-size: 24px;
     margin-top:40px;
     margin-bottom:40px;
-    color:#DADADA;
+    color:var(--heading-color);
     
 }
 .section2 .word-counter >h4{
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 10px;
-    color:#DADADA;
+    color:var(--heading-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -328,7 +337,7 @@ padding:30px;
     font-style: normal;
     font-weight: 600;
     margin-bottom: 15px;
-    color:#f1e7e7;
+    color:var(--heading-color);
 }
 .form .form-name{
    
